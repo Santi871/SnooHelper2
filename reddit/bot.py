@@ -1,6 +1,7 @@
 import praw
 import config
 from logger import get_logger
+from .threading import threaded
 
 
 class RedditWorkerBot:
@@ -23,6 +24,18 @@ class RedditWorkerBot:
         else:
             raise ValueError("Only script type reddit auth has been programmed, set app type to 1 in config")
         self.logger.info("Authenticated")
+
+    def scan_comments(self):
+        pass
+
+    def scan_submissions(self):
+        pass
+
+    def scan_modlog(self):
+        pass
+
+    def scan_modmail(self):
+        pass
 
 if __name__ == "__main__":
     bot = RedditWorkerBot('asdasd', 'santi871')

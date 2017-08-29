@@ -107,3 +107,5 @@ ENV/
 config.py
 reddit/snoohelper_log.txt
 !/.gitignore
+/credentials.ini
+credentials.ini

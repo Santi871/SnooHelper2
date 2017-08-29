@@ -2,8 +2,7 @@ import logging
 import config
 
 
-logging_filename = 'snoohelper_log.txt'
-handler = logging.FileHandler(filename=logging_filename, encoding='utf-8')
+handler = logging.FileHandler(filename=config.logging_filename, encoding='utf-8')
 formatter = logging.Formatter(
     '%(asctime)s %(name)-12s %(levelname)-8s %(message)s')
 handler.setFormatter(formatter)
