@@ -111,3 +111,4 @@ reddit/snoohelper_log.txt
 credentials.ini
 /snoohelper_log.txt
 snoohelper_log.txt
+/.coveralls.yml
