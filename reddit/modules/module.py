@@ -1,4 +1,7 @@
-import config
+try:
+    import config
+except ImportError:
+    import config_env_vars as config
 
 
 class Module:

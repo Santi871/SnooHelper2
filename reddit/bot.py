@@ -1,8 +1,12 @@
 import praw
-import config
 from logger import get_logger
 from .threading import threaded
 from .modules.summary_generator.sherlock import AnalyzedRedditor
+
+try:
+    import config
+except ImportError:
+    import config_env_vars as config
 
 
 class RedditWorkerBot:

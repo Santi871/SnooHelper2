@@ -18,5 +18,5 @@ class RedditWorkerTests(unittest.TestCase):
         self.test_bot.threaded_test_case()
 
     def test_user_analysis(self):
-        self.assertTrue(type(self.test_bot.analyze_user('santi871'), str))
+        self.assertTrue(type(self.test_bot.analyze_user('santi871')) == str)
 

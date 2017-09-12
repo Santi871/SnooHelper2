@@ -1,5 +1,9 @@
 import logging
-import config
+
+try:
+    import config
+except ImportError:
+    import config_env_vars as config
 
 
 handler = logging.FileHandler(filename=config.logging_filename, encoding='utf-8')
