@@ -109,3 +109,5 @@ reddit/snoohelper_log.txt
 !/.gitignore
 /credentials.ini
 credentials.ini
+/snoohelper_log.txt
+snoohelper_log.txt
