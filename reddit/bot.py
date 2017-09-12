@@ -38,7 +38,6 @@ class RedditWorkerBot:
     def analyze_user(self, username):
         redditor = self.standby_r.redditor(username)
         analyzed_user = AnalyzedRedditor(redditor)
-        print(str(analyzed_user))
         return str(analyzed_user)
 
     def scan_comments(self):
